@@ -4,16 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "vccyb",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
     "@mistjs/eslint-config-vue": "^0.0.3",
+    "@mistjs/tsconfig": "^1.0.0",
     "@mistjs/tsconfig-vue": "^0.0.3",
     "@types/node": "^18.15.11",
     "eslint": "^8.37.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
