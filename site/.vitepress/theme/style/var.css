@@ -1,0 +1,25 @@
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    /* 135deg, #90F7EC 10%, #32CCBC 100% */
+    /* 135deg, #81FBB8 10%, #28C76F 100% */
+    /* 135deg, #70F570 10%, #49C628 100% */
+    135deg, #92FFC0 10%, #002661 100%
+
+
+  );
+
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    /* 135deg, #90F7EC 10%, #32CCBC 100% */
+    /* 135deg, #81FBB8 10%, #28C76F 100% */
+    /* 135deg, #70F570 10%, #49C628 100% */
+    135deg, #92FFC0 10%, #002661 100%
+
+
+  );
+  --vp-home-hero-image-filter: blur(70px);
+}
