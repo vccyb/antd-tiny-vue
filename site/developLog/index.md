@@ -67,9 +67,11 @@ describe('demo', (): void => {
 
 script 添加一条命令
 ```json
-"scripts": {
-  "test": "vitest",
-  // ...
+{
+  "scripts": {
+    "test": "vitest",
+    // ...
+  }
 }
 ```
 
@@ -119,13 +121,30 @@ pnpm add lint-staged -D
 
 配置package.json
 ```json
-"lint-staged": {
-  "*.{js,jsx,ts,tsx,vue}": "eslint --fix"
-},
+{
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": "eslint --fix"
+  },
+}
 ```
 
 commit 前执行钩子 lint-staged
 husky创建钩子
 ```shell
 pnpm exec husky add ./husky/pre-commit "pnpm exec lint-staged"
+```
+
+## 7 搭建vitepress的文档
+```shell
+pnpm add vitepress -D
+```
+如果有警告，去viterpress的官网看下去除方法
+
+根目录下创建一个site站点
+```json
+{
+  "dev": "vitepress dev site",
+  "build:site": "vitepress build site",
+  "preview": "vitepress preview site"
+}
 ```

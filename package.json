@@ -25,6 +25,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.7",
+    "sass": "^1.60.0",
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
     "vite-plugin-vitepress-demo": "^2.0.1",

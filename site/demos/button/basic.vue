@@ -9,7 +9,7 @@ title: 基础按钮
 <script lang="ts" setup></script>
 
 <template>
-  <div>按钮</div>
+  <YButton>这是按钮</YButton>
 </template>
 
 <style scoped></style>
