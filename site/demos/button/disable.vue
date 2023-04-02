@@ -1,25 +1,29 @@
 <docs>
-这是一个Button的基础按钮,可以根据`type`选择类型
+
 </docs>
 
-<script lang="ts" setup></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
   <div class="display-box">
-    <YButton>button</YButton>
-    <YButton type="primary">
+    <YButton disabled>
+      button
+    </YButton>
+    <YButton type="primary" disabled>
       primary
     </YButton>
-    <YButton type="success">
+    <YButton type="success" disabled>
       success
     </YButton>
-    <YButton type="warning">
+    <YButton type="warning" disabled>
       warning
     </YButton>
-    <YButton type="danger">
+    <YButton type="danger" disabled>
       danger
     </YButton>
-    <YButton type="yep">
+    <YButton type="yep" disabled>
       yep
     </YButton>
   </div>
@@ -28,6 +32,6 @@
 <style lang="scss" scoped>
 .display-box {
   display: flex;
-  gap: 10px
+  gap: 10px;
 }
 </style>
