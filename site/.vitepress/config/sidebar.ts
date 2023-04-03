@@ -8,6 +8,10 @@ export const getSidebar = (): DefaultTheme.Sidebar => {
         link: '/components/button/',
       },
       {
+        text: 'Icon 图标',
+        link: '/components/icon/',
+      },
+      {
         text: 'Card 卡片',
         link: '/components/card/',
       },

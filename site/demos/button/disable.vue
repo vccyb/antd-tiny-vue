@@ -8,24 +8,24 @@
 
 <template>
   <div class="display-box">
-    <YButton disabled>
+    <y-button disabled>
       button
-    </YButton>
-    <YButton type="primary" disabled>
+    </y-button>
+    <y-button type="primary" disabled>
       primary
-    </YButton>
-    <YButton type="success" disabled>
+    </y-button>
+    <y-button type="success" disabled>
       success
-    </YButton>
-    <YButton type="warning" disabled>
+    </y-button>
+    <y-button type="warning" disabled>
       warning
-    </YButton>
-    <YButton type="danger" disabled>
+    </y-button>
+    <y-button type="danger" disabled>
       danger
-    </YButton>
-    <YButton type="yep" disabled>
+    </y-button>
+    <y-button type="yep" disabled>
       yep
-    </YButton>
+    </y-button>
   </div>
 </template>
 

@@ -4,31 +4,50 @@ import { computed } from 'vue'
 const props = defineProps({
   type: {
     type: String,
-    default: '',
+    default: 'default',
     validator(value: string) {
-      return ['primary', 'success', 'warning', 'danger', 'yep'].includes(value)
+      return ['default', 'primary', 'success', 'warning', 'danger', 'yep'].includes(value)
     },
   },
   disabled: {
     type: Boolean,
     default: false,
   },
+  round: {
+    type: Boolean,
+    default: false,
+  },
+  icon: {
+    type: String,
+    default: '',
+
+  },
 })
+
+const emit = defineEmits(['click'])
 
 const styleClass = computed(() => {
   return {
     [`y-button--${props.type}`]: props.type,
     'is-disabled': props.disabled,
+    'is-round': props.round,
   }
 })
+
+const handleClick = () => {
+  // console.log('内部button click事件触发')
+  emit('click')
+}
 </script>
 
 <template>
-  <div>
-    <button class="y-button" :class="styleClass">
+  <button class="y-button" :class="styleClass" @click="handleClick">
+    <span>
+      <y-icon v-if="props.icon" :name="props.icon" />
       <slot />
-    </button>
-  </div>
+
+    </span>
+  </button>
 </template>
 
 <style lang="scss" scoped>
@@ -51,6 +70,13 @@ const styleClass = computed(() => {
   border-radius: 4px;
 }
 
+.y-button span {
+  display: inline-flex;
+  flex-direction: rows;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
 .y-button:focus,
 .y-button:hover{
   color: #409EFF;
@@ -190,5 +216,11 @@ const styleClass = computed(() => {
   color: #fff;
   background-color: #CCA3CC;
   border-color: #CCA3CC;
+}
+
+/** 圆角 */
+.y-button.is-round {
+  border-radius: 20px;
+  padding: 12px 23px;
 }
 </style>
