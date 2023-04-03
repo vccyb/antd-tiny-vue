@@ -21,4 +21,4 @@
       })(), a.onreadystatechange = function () { a.readyState == 'complete' && (a.onreadystatechange = null, l()) })
     } function l() { i || (i = !0, o()) } let o, a, i, e
   }(() => { let c, t, l, o, a, i; (c = document.createElement('div')).innerHTML = e, e = null, (t = c.getElementsByTagName('svg')[0]) && (t.setAttribute('aria-hidden', 'true'), t.style.position = 'absolute', t.style.width = 0, t.style.height = 0, t.style.overflow = 'hidden', l = t, (o = document.body).firstChild ? (a = l, (i = o.firstChild).parentNode.insertBefore(a, i)) : o.appendChild(l)) }))
-}(window))
+}())

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import '../../assets/js/iconfont.js'
-
+import { computed, onMounted } from 'vue'
 const props = defineProps({
   name: {
     type: String,
     default: '',
   },
 })
-
+onMounted(() => {
+  import(('../../assets/js/iconfont.js') as any).then((icon) => {})
+})
 const IconName = computed(() => {
   return `#icon-${props.name}`
 })
