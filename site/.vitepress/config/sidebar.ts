@@ -12,6 +12,10 @@ export const getSidebar = (): DefaultTheme.Sidebar => {
         link: '/components/icon/',
       },
       {
+        text: 'Input 输入框',
+        link: '/components/input/',
+      },
+      {
         text: 'Card 卡片',
         link: '/components/card/',
       },
