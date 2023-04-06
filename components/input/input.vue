@@ -144,6 +144,7 @@ const clearText = () => {
     border-color: #e4e7ed;
     color: #c0c4cc;
     cursor: not-allowed;
+    resize: none;
   }
 
   .y-textarea.is-center {
