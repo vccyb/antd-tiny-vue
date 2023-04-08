@@ -16,6 +16,10 @@ export const getSidebar = (): DefaultTheme.Sidebar => {
         link: '/components/input/',
       },
       {
+        text: 'InputNumber 计数器',
+        link: '/components/input-number/',
+      },
+      {
         text: 'Card 卡片',
         link: '/components/card/',
       },
