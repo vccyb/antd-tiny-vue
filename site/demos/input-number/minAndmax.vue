@@ -1,5 +1,5 @@
 <docs>
-  可以通过`step`来绑定减少、增加的值
+  可以通过`min`和`max`限制最小最大值
 </docs>
 
 <script setup lang="ts">
@@ -10,10 +10,9 @@ const count2 = ref(10)
 
 <template>
   <div class="display-box">
-    <y-input-number v-model="count2" :step="2" :min="1" :max="10" />
-  </div>
-  <div class="display-box">
-    <y-input-number v-model="count" :step="2" :min="1" :max="10" disabled />
+    <y-input-number v-model="count" :step="2" :min="1" :max="10" />
+    <span>{{ count }}</span>
+    <span>{{ `[min:1 - max:10]` }}</span>
   </div>
 </template>
 
