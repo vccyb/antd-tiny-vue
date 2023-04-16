@@ -20,6 +20,10 @@ export const getSidebar = (): DefaultTheme.Sidebar => {
         link: '/components/input-number/',
       },
       {
+        text: 'Radio 单选',
+        link: '/components/radio/',
+      },
+      {
         text: 'Card 卡片',
         link: '/components/card/',
       },
