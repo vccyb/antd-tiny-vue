@@ -12,7 +12,6 @@ const props = defineProps({
 const emits = defineEmits(['update:modelValue'])
 
 const CheckBoxGroup = inject('CheckBoxGroup', '')
-// console.log(CheckBoxGroup)
 
 // 是否是分组，如果是分组就需要绑定到group v-model绑定的值
 const isGroup = computed(() => {
@@ -23,7 +22,7 @@ const CKValue = computed({
     return isGroup.value ? (CheckBoxGroup as any).props.modelValue : props.modelValue
   },
   set(value) {
-    isGroup.value ? (CheckBoxGroup as any).ctx.$emit('update:modelValue', value) : emits('update:modelValue', value)
+    isGroup.value ? (CheckBoxGroup as any).emit('update:modelValue', value) : emits('update:modelValue', value)
   },
 })
 

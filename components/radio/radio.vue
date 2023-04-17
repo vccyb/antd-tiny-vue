@@ -22,7 +22,7 @@ const radioValue = computed({
   },
   set(value) {
     if (isGroup.value)
-      (RadioGroup as any).ctx.$emit('update:modelValue', value)
+      (RadioGroup as any).emit('update:modelValue', value)
     else
       emits('update:modelValue', value)
   },
