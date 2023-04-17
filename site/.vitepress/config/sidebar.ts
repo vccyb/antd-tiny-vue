@@ -24,6 +24,10 @@ export const getSidebar = (): DefaultTheme.Sidebar => {
         link: '/components/radio/',
       },
       {
+        text: 'Checkbox 多选',
+        link: '/components/checkbox/',
+      },
+      {
         text: 'Card 卡片',
         link: '/components/card/',
       },
