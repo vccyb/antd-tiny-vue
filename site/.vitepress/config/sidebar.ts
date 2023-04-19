@@ -28,6 +28,10 @@ export const getSidebar = (): DefaultTheme.Sidebar => {
         link: '/components/checkbox/',
       },
       {
+        text: 'Message 消息',
+        link: '/components/message/',
+      },
+      {
         text: 'Card 卡片',
         link: '/components/card/',
       },
