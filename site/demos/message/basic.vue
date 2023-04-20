@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useMessage } from '../../../components/message'
+const $message = useMessage()
 const showMessage = () => {
-  // console.log('1111')
-  useMessage()
+  $message({ aa: 'bb' })
 }
 </script>
 
